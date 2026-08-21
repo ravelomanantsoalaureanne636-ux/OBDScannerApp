@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OBD Scanner</string>
+    <string name="btn_scan">Scanner</string>
+    <string name="btn_connect">Connecter</string>
+    <string name="btn_read_dtc">Lire DTC</string>
+    <string name="btn_clear_dtc">Effacer DTC</string>
+    <string name="status_not_connected">Statut: non connecté</string>
+</resources>
