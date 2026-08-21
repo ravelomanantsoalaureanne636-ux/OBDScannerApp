@@ -1,0 +1,20 @@
+# OBDScannerApp
+
+Petit projet Android minimal pour dialoguer avec un adaptateur ELM327 via Bluetooth.
+
+Fichiers importants:
+- app/ : module Android
+- app/src/main/java/com/example/obdscanner/ : sources Kotlin (ELM327.kt, MainActivity.kt, DtcCodes.kt)
+- app/src/main/res/layout/activity_main.xml
+- app/src/main/res/values/strings.xml, styles.xml, colors.xml
+
+Build local:
+- Méthode recommandée : utiliser le Gradle Wrapper (`./gradlew assembleDebug`). Si vous n'avez pas le wrapper, générez-le localement avec `gradle wrapper` puis poussez les fichiers wrapper dans le repo.
+- Alternative CI : le workflow GitHub Actions fourni installe Gradle et construit l'APK automatiquement sur push.
+
+Installer l'APK:
+- Téléchargez l'artefact depuis l'exécution GitHub Actions ou construisez localement et installez : `adb install -r app/build/outputs/apk/debug/app-debug.apk`
+
+Remarques:
+- N'utilisez l'effacement de DTC que sur des véhicules de test ou avec précautions.
+- Ce projet vise l'apprentissage et le diagnostic basique (Mode 01/03/04). Les fonctions constructeur/flash ne sont pas gérées.
